@@ -1,3 +1,5 @@
+/* Chnages made for Everything*/ 
+
 *{
     font-family: Be vietnam pro;
     margin: 0;
@@ -5,16 +7,29 @@
     box-sizing: border-box;
 
 }
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.section_padding{
+    padding: 50px 200px;
+}
+/* Header CSS*/
+
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 200px;
     background: rgb(255, 255, 255);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 999;
 
 }
 
@@ -32,6 +47,7 @@
 }
 #navbar li a{
     text-decoration: none;
+    position: relative;
 }
 .logo a{
     font-size: 32px;
@@ -43,11 +59,21 @@
     font-size: 16px;
     font-size: medium;
     color: black;
+    transition: 0.3s ease;
 }
+#navbar li a:hover{
+
+color: #123573;
+    
+}
+
+
+
+
+
 
 .search{
     display: flex;
-    
     justify-content: space-between;
     height: 35px;
     line-height: 35px;
@@ -78,14 +104,10 @@
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     z-index: 1;
-    border: none;
-    
-    
+    border: none;  
+    width: 40px
     
 }
-
-
-
 
 
 #navbar button{
@@ -93,14 +115,13 @@
     height: 100%;
     margin-left: 20px;
     color: #F0F2F5;
-    border-radius: 8px 8px 8px;
+    border-radius: 12px 12px 12px;
     padding: 8px 10px;
     border-color: #123573;
     font-size: 16px;
     
-
- 
 }
+
 #hero{
     padding-top: 35;
 }
@@ -117,7 +138,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-left: 232;
+    padding-left: 235;
     padding-bottom: 235;
     font-size: 36px;
     font-weight: bolder;
@@ -133,7 +154,7 @@
         left: 0px;
         color: black;
         text-align: left;
-        padding-left: 232;
+        padding-left: 235;
         padding-bottom: 185;
         color: #123573;
 
@@ -141,14 +162,66 @@
 
 .herobutton{
     position: absolute;
-    bottom: 150px;
-    left: 232px;
+    bottom: 130px;
+    left: 235px;
     color: black;
     text-align: left;
-   
+    background-color: #123573;
+    color: #F0F2F5;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px 12px;
+    font-size: 16px;
+    font-weight: 500;
     
+    
+}
+   
+
+#Genres{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+
+    
+}
+
+
+
+.heading{
+    font-size: 24px;
+    font-weight: bold;
     color: #123573;
+    padding-bottom: 4px;
 
 }
+.subtext{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.fe-box{
     
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    
+   
+    text-align: center;
+    /* padding: 25px 20px;  */
+    /* box-shadow: 20px 20px 34px rgba( 0, 0, 0, 0.06); */
+    /* border: 1px solid; */
+    box-sizing: border-box 20px 20px 20px;
+}
+
+.bottom_space{
+    padding-bottom: 15px;
+}
+
+.generes-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
 
