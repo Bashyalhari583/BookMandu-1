@@ -299,49 +299,6 @@
     </div>
 </div>
 
-<!-- Add Product for sell Section -->
-<button id="openOverlay">Add Book for Sell</button>
-
-<div id="overlay" class="overlay">
-    <div class="modal">
-        <span class="close-btn" id="closeOverlay">&times;</span>
-        <h2>Add Book for Sell</h2>
-        <p>Please fill in the required details to add your product.</p>
-        <form id="addBookForm">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" placeholder="Name of your book" required>
-
-            <label for="price">Price *</label>
-            <input type="number" id="price" name="price" placeholder="Book Price" required>
-
-            <label for="description">Description</label>
-            <textarea id="description" name="description" placeholder="Describe the book"></textarea>
-
-            <label for="category">Category</label>
-            <select id="category" name="category">
-                <option value="">Select category</option>
-                <option value="fiction">Fiction</option>
-                <option value="non-fiction">Non-Fiction</option>
-                <option value="textbook">Textbook</option>
-                <option value="children">Children's Book</option>
-            </select>
-
-            <label for="city">City</label>
-            <select id="city" name="city">
-                <option value="">Select City</option>
-                <option value="new-york">New York</option>
-                <option value="los-angeles">Los Angeles</option>
-                <option value="chicago">Chicago</option>
-                <option value="houston">Houston</option>
-            </select>
-
-            <label for="images">Select Images:</label>
-            <input type="file" id="images" name="images" accept="image/*" multiple class="file-input">
-
-            <button type="submit">Add Product</button>
-        </form>
-    </div>
-</div>
 </body>
 
 </html>

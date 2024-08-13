@@ -55,148 +55,8 @@ h2{
 
 
 /* Header CSS*/
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 200px;
-    background-color: #ffffff;
-    color: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
 
-}
-
-.logo a {
-    text-decoration: none;
-    font-size: 32px;
-    color:#123573;
-    font-weight: bold;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    max-width: 600px;
-    margin: 0 50px;
-    border: none;
-}
-
-.search input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    background-color: #F0F2F5;
-    border-radius: 8px 0 0 8px;
-    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); */
-    height: 100%; /* Ensure equal height */
-}
-
-.search button {
-    background-color: #EEEEEE;
-    border: none;
-    padding: 12px;
-    color: #61758A;
-    cursor: pointer;
-    border-radius: 0 8px 8px 0;
-    
-    height: 100%; /* Ensure equal height */
-    font-size: 16px;
-}
-
-/* Responsive styling for smaller screens */
-@media screen and (max-width: 480px) {
-    .search {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search button {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5px;
-        border-radius: 3px;
-    }
-}
-
-#navbar {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-#navbar li {
-    margin-left: 20px;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: rgb(60, 60, 60);
-    font-size: 16px;
-    padding: 8px 16px;
-    border-radius: 3px;
-}
-
-
-#navbar a:hover {
-    color:#123573 ;
-}
-
-/* Responsive styling */
-@media screen and (max-width: 768px) {
-    #header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .logo {
-        flex: 1 1 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .search {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-
-    #navbar {
-        flex: 1 1 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #navbar li {
-        margin-left: 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .search input[type="text"] {
-        width: 100%;
-    }
-
-    .search button {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5px;
-        border-radius: 3px;
-    }
-
-    #navbar li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    #navbar a {
-        display: block;
-        width: 100%;
-    }
-}
-/* #header{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,7 +88,7 @@ h2{
     position: relative;
     /* padding: 10px 12px; */
     
-/* }
+ }
 .logo a{
     font-size: 32px;
     font-weight: bold;
@@ -241,7 +101,7 @@ h2{
     color: black;
     transition: 0.3s ease;
     /* padding: 10px 12px; */
-/* }
+ }
 #navbar li a:hover{
 color:#123573;
    
@@ -252,45 +112,45 @@ color:#123573;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     background-color: #fff;
     border-radius: 12px;
-    
+    justify-content: left;
     padding:5px;
+    
       
 }
 
 .search input{
     
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 16px;
     border-top-left-radius: 12px;
     border-bottom-left-radius:12px;
     outline: none;
     background-color: #F0F2F5;
     transition: all 0.3s ease;
+    width: 350px;
     
 }
 
 
 .search button{
-    background-color: #F0F2F5;
-    color: #61758A;
+    background-color: #EEEEEE;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius:12px;
+    padding: 12px;
+    color: #61758A;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center; } */
+    border-radius: 0 8px 8px 0;
+    
+    height: 100%; /* Ensure equal height */
+    font-size: 16px;
+}
+.search button:hover{
+    background-color: #d2cfcf;
+}
 
-
-
- 
     /* Hero Section CSSS */
 
 #hero{
@@ -606,74 +466,3 @@ color:#123573;
 }
 
 
-/* add profuct for sell overlay */
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 1000;
-}
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 500px;
-    width: 90%;
-    max-height: 90%;
-    overflow-y: auto;
-}
-h2 {
-    text-align: center;
-    color: #333;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-input, select, textarea {
-    margin-bottom: 15px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-textarea {
-    height: 100px;
-    resize: vertical;
-}
-.file-input {
-    margin-bottom: 15px;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover {
-    background-color: #45a049;
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-    
