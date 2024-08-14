@@ -23,7 +23,7 @@
         <ul id="navbar">
             <li><a class="active" href="#" onclick="openOverlay('signupOverlay')">Signup</a></li>
             <li><a href="#" onclick="openOverlay('loginOverlay')">Login</a></li>
-            <li><a href="#" onclick="openOverlay()">Sell Books</a></li>
+            <li><a href="#"onclick= "openOverlay('sellBookOverlay')">Sell Books</a></li>
         </ul>
 
 
@@ -232,7 +232,7 @@
 </div>
 
 <!-- Footer Section -->
- <section id= footer class="section_padding">
+ <section id= "footer" class="section_padding">
     <div class="col">
         <h3>Contacts</h3>
         <h2><i class="fa-solid fa-location-dot"></i> Butwal-3, Rupandehi, Nepal</h2>
@@ -299,6 +299,69 @@
     </div>
 </div>
 
+
+<!-- Add Items for Sell -->
+<div id="sellBookOverlay" class="newoverlay"> 
+    <div class="sell-overlay-content">
+        <span class="close-btn" onclick="closeOverlay('sellBookOverlay')">&times;</span>
+        <h2> Add Products for sell</h2>
+        <p>Please fill in the required details to add your product.</p>
+        
+        <form action="#" method="post">
+            <div class="name">
+                <div class="bookName">
+                    <label for="bookName">Book Name</label>
+                    <input id="bookName" type="text" name="bookName" required>
+                </div>
+                <div class="bookPrice">
+                    <label for="price">Price</label>
+                    <input id="price" type="text" name="price" required>
+                </div>
+            </div>
+            <div class="name">
+                <div class="bookName">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" id="">Describe the condition of book</textarea>
+                </div>
+            </div>
+            <div class="name">
+            <div class="bookName">
+            <label for="category" id="category" name="category">Category</label>
+            <select name="category" id="category">
+                <option value="fiction">Fiction</option>
+                <option value="Novels">Novels</option>
+                <option value="Selfhelp">Selfhelp</option>
+                <option value="Biography">Biography</option>
+                <option value="Finance">Finance</option>
+                <option value="History">History</option>
+            </select>
+            </div>
+            <div class="bookPrice">
+            <Label for="city" name="city" id="city">City</Label>
+            <select name="city" id="city">
+                <option value="Butwal">Butwal</option>
+                <option value="Rupandehi">Rupandehi</option>
+                <option value="Kapilbastu">Kapilbastu</option>
+                <option value="Gulmi">Gumli</option>
+            </select>
+            </div>
+
+            </div>
+            <div class="upload">
+            <input type="file" id="myFile" name="filename"><br>
+            <button type="submit">Add Product</button>
+            </div>
+
+        </form>
+        
+    </div>
+
+</div>
+
+
+ 
+
 </body>
 
-</html>
+
+

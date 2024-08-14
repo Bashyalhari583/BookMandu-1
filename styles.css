@@ -60,6 +60,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 20px 200px;
     background: rgb(255, 255, 255);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
@@ -67,7 +68,9 @@ h2{
     top: 0;
     left: 0;
     z-index: 999;
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
+   
 
 }
 
@@ -264,7 +267,7 @@ color:#123573;
 .generes-boxes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -285,7 +288,8 @@ color:#123573;
 }
 
 #collection .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 20px 20px 30px rgb(228, 224, 224);
+    width: 190;
     
 }
     
@@ -306,6 +310,8 @@ color:#123573;
     justify-content: space-around;
     padding-right: 200px;
     flex-wrap: wrap;
+    gap: 15px;
+    
 }
 
 .more{
@@ -338,6 +344,7 @@ color:#123573;
         background-color: #123573;
         color: white;
         text-decoration: none;
+        position: relative;
     }
     #footer .col{
         display: flex;
@@ -386,7 +393,7 @@ color:#123573;
     }
 
 
-    /* Overlay Style */
+    /* Overlay Login?signup*/
 .overlay {
     position: fixed;
     top: 0;
@@ -410,18 +417,19 @@ color:#123573;
     position: relative;
 }
 
-.close-btn {
+/* .close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 24px;
     cursor: pointer;
-}
+} */
 
 .overlay h2 {
-    color: #1e3a8a;
+    color: #123573;
     margin-bottom: 20px;
     font-size: 24px;
+    font-weight: 600;
 }
 
 .overlay input[type="text"],
@@ -436,7 +444,7 @@ color:#123573;
 }
 
 .overlay button[type="submit"] {
-    background-color: #2563eb;
+    background-color: #123573;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -465,4 +473,170 @@ color:#123573;
     text-decoration: underline;
 }
 
+/* sell Books Section */
 
+
+.newoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.sell-overlay-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.newoverlay h2 {
+    color: #123573;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.newoverlay p{
+margin-bottom: 15px;
+}
+.bookName{
+    display: flex;
+    flex-direction: column;
+}
+.bookPrice{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#description{
+    width: 639px;
+    height: 100px;
+    
+}
+.name label{
+    padding: 10px 0;
+    
+}
+.Name select{
+    width: 270px;
+    padding: 10px;
+    
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.upload input {
+    width: 270px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    
+    
+}
+.name input{
+    width: 270px;
+    padding: 10px;
+    
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.upload button{
+    margin-top: 10px ;
+    
+    text-align: left;
+    background-color: #123573;
+    color: #F0F2F5;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+}
+.upload button:hover{
+    background-color: #214b94;
+}
+
+
+/* Product Display Sections */
+
+.main{
+    padding:20px;
+    background-color: #ADADAD;
+}
+.mainImage{
+
+    width: 243px;
+    height: 360px;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 10px;
+    border: 1px solid #ebedf3;
+
+}
+.mainImage img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.imgname{
+    display: flex;
+    justify-content: center;
+}
+
+.profileimage{
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+}
+#productDisplay{
+    background-color: #466692;
+}
+.information{
+    padding: 50px;
+}
+
+
+.imgname{
+    display: flex;
+    justify-content: left;
+      
+}
+#productDisplay{
+    width: 100%;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+
+}
