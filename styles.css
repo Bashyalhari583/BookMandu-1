@@ -591,12 +591,14 @@ margin-bottom: 15px;
 
 .main{
     padding:20px;
-    background-color: #ADADAD;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 15px 15px 50px rgb(232, 230, 230);
 }
 .mainImage{
 
-    width: 243px;
-    height: 360px;
+    width: 280px;
+    height: 410px;
     border-radius: 8px;
     border: 1px solid;
     padding: 10px;
@@ -619,7 +621,7 @@ margin-bottom: 15px;
     width: 26px;
 }
 #productDisplay{
-    background-color: #466692;
+    background-color: #ffffff;
 }
 .information{
     padding: 50px;
@@ -637,6 +639,36 @@ margin-bottom: 15px;
 }
 .main{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 50px;
 
 }
+.bookinformation h5{
+    font-size: 34px;
+    font-weight: bold;
+    color: #123573;
+
+}
+.bookinformation h6{
+    font-size: 30px;
+    font-weight: 800;
+    color: #123573;
+}
+.bookinformation p{
+    font-size: 16px;
+}
+.bookinformation button{
+    background-color: #123573;
+    color: #ebedf3;
+    padding: 6px 6px;
+    border-radius: 8px;
+    width: 70px;
+}
+.bookinformation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
